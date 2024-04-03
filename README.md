@@ -7,7 +7,7 @@ Creating a spatial hash for Entities 10 cells wide and 10 cells tall, where each
 
 ```dart
 import "dart:math";
-import "package:spatialhash/spatialhash.dart";
+import "package:spatial_hash_new/spatial_hash_new.dart";
 
 var mySpatialHash = SpatialHash<Entity>(10, 10, 100, 100);
 ```

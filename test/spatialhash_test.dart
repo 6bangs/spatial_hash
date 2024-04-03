@@ -1,6 +1,6 @@
 import "dart:math";
 
-import 'package:spatialhash/spatialhash.dart';
+import 'package:spatial_hash_new/spatial_hash_new.dart';
 import 'package:test/test.dart';
 
 void main() {

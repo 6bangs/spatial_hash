@@ -5,3 +5,7 @@
 ## 1.0.1
 
 - Updated description and ran dartfmt through the code.
+
+## 1.0.2
+
+- Null safety, Dart 3

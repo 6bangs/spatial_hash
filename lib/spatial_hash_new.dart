@@ -1,5 +1,5 @@
 /// An easy-to-use implementation of a Spatial Hash for Dart. Used for efficient collision detection and spatial
 /// filtering of added objects.
-library spatialhash;
+library spatial_hash;
 
-export 'src/spatialhash_base.dart';
+export 'src/spatial_hash_base.dart';

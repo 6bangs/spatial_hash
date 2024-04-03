@@ -1,6 +1,6 @@
 import "dart:math";
 
-import "package:spatialhash/spatialhash.dart";
+import "package:spatial_hash/spatial_hash.dart";
 
 void main() {
   // create a new spatial hash whose origin is at (0, 0), with 10 x 10 cells.
