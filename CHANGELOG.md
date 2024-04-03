@@ -9,3 +9,7 @@
 ## 1.0.2
 
 - Null safety, Dart 3
+
+## 1.0.3
+
+- Fixed the example
