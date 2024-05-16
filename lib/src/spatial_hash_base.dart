@@ -144,11 +144,16 @@ class SpatialHash<T> {
   /// detection algorithm on the contents of this set to precisely detect collisions. The goal of a [SpatialHash]
   /// is to merely reduce the number of objects you have to check against for detecting collisions. It does not give
   /// a definitive list of objects colliding with the given item.
-  Set<T> near(T item) {
-    final result = Set<T>();
-    for (final cell in _itemLookup[item]!) result.addAll(cell._contents);
-    result.remove(item);
-    return result;
+  Iterable<T> near(T item) sync* {
+    final cells = _itemLookup[item]!;
+
+    for (final cell in cells) {
+      for (final neighbor in cell._contents) {
+        if (neighbor != item) {
+          yield neighbor;
+        }
+      }
+    }
   }
 
   /// Returns a [Set] containing all the items occupying the same cells as `item`, as well as all items

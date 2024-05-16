@@ -13,3 +13,7 @@
 ## 1.0.3
 
 - Fixed the example
+
+## 1.0.4
+
+- Improved near performance: using a generator instead of an intermediate Set.
